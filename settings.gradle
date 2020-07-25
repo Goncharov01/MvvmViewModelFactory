@@ -1,0 +1,2 @@
+rootProject.name='MvvmHelloWord'
+include ':app'
