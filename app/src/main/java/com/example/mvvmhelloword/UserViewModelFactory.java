@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
+import javax.inject.Inject;
+
 public class UserViewModelFactory implements ViewModelProvider.Factory {
 
     Model model;
-
+    @Inject
     public UserViewModelFactory(Model model) {
         this.model = model;
     }
