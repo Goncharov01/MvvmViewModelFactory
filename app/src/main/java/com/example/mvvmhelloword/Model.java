@@ -4,6 +4,7 @@ public class Model {
 
     String name = "Alexander";
     String number = "4";
+    String editText = "";
 
     public Model(String name, String number) {
         this.name = name;
@@ -27,5 +28,13 @@ public class Model {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getEditText() {
+        return editText;
+    }
+
+    public void setEditText(String editText) {
+        this.editText = editText;
     }
 }

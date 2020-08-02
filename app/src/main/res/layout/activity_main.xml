@@ -9,6 +9,11 @@
         <variable
             name="viewModel"
             type="com.example.mvvmhelloword.LoginViewModel" />
+
+        <variable
+            name="watcher"
+            type="android.text.TextWatcher"/>
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,6 +48,20 @@
             android:layout_height="wrap_content"
             android:text="@{viewModel.number}"
             app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Input Email"
+            android:text="@={viewModel.oldData}"
+            android:watcher="@{viewModel.oldData}"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
